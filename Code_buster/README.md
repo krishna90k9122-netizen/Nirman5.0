@@ -10,11 +10,7 @@ A full-stack AI-powered citizen complaint system with OTP verification, NLP proc
 - **Predictive Analytics**: 7-day trend forecasting for resource planning
 - **Geographic Visualization**: Interactive heatmap showing complaint hotspots
 
-### 🔐 Security & Verification
-- **OTP-Based Authentication**: Secure phone verification with rate limiting
-- **Redis Integration**: High-performance caching with fallback support
-- **Input Validation**: Comprehensive validation using Pydantic models
-- **CORS Protection**: Secure cross-origin resource sharing
+
 
 ### 📱 User Experience
 - **Mobile-First Design**: Responsive interface optimized for all devices
