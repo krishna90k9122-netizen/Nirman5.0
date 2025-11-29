@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="LokAI - AI for Smarter Cities. Report and track city complaints with AI-powered analysis and predictive analytics." />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokai - Complaint Management System</title>
+    <meta name="description" content="Modern complaint management system with real-time tracking and analytics" />
+    <meta name="keywords" content="complaint, management, tracking, analytics, system" />
+    <meta name="author" content="Lokai Team" />
     
-    <!-- Leaflet CSS for maps -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lokai.vercel.app/" />
+    <meta property="og:title" content="Lokai - Complaint Management System" />
+    <meta property="og:description" content="Modern complaint management system with real-time tracking and analytics" />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lokai.vercel.app/" />
+    <meta property="twitter:title" content="Lokai - Complaint Management System" />
+    <meta property="twitter:description" content="Modern complaint management system with real-time tracking and analytics" />
+    <meta property="twitter:image" content="/og-image.png" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/main.jsx" as="script" />
+    <link rel="preload" href="/src/index.css" as="style" />
     
-    <title>LokAI - AI for Smarter Cities</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Additional CSS for animations -->
+    <style>
+      /* Loading animation */
+      .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: hsl(220, 13%, 8%);
+        overflow-x: hidden;
+      }
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="padding: 1rem; text-align: center; background: #f8f9fa; color: #212529;">
+        <h2>Please enable JavaScript to run this application.</h2>
+        <p>This application requires JavaScript to function properly. Please enable it in your browser settings.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

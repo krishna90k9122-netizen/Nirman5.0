@@ -4,6 +4,7 @@
   "private": true,
   "description": "LokAI - AI for Smarter Cities (Frontend)",
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
@@ -21,6 +22,7 @@
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "tailwindcss": "^3.4.18",
     "vite": "^7.2.4",
     "web-vitals": "^2.1.4"
   },
@@ -49,11 +51,10 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
     "stylelint": "^14.16.0",
-    "stylelint-config-standard": "^29.0.0",
-    "tailwindcss": "^3.2.7"
+    "stylelint-config-standard": "^29.0.0"
   },
   "proxy": "http://localhost:8000"
 }

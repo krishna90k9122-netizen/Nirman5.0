@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Heatmap Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="heatmap.css" />
+</head>
+<body>
+    <div id="dashboard-header">REAL-TIME DASHBOARD</div>
+    <div id="mapid"></div>
+    
+    <!-- Statistics Dashboard -->
+    <div id="stats-dashboard">
+        <div class="stat-card">
+            <div class="stat-number" id="total-locations">0</div>
+            <div class="stat-label">Total Locations</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="hotspots">0</div>
+            <div class="stat-label">Hotspots (Pending)</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="resolved-areas">0</div>
+            <div class="stat-label">Resolved Areas</div>
+        </div>
+    </div>
+    
+    <div id="heat-controls">
+        <label>Radius: <input id="radius" type="range" min="5" max="60" value="25"></label>
+        <label>Blur: <input id="blur" type="range" min="1" max="40" value="15"></label>
+        <label>Max Intensity: <input id="max" type="range" min="0.1" max="3" step="0.1" value="1"></label>
+        <label>Min Opacity: <input id="minOpacity" type="range" min="0" max="1" step="0.05" value="0.5"></label>
+        <button id="regen">Regenerate Dense Points</button>
+        <button id="back-to-dashboard" class="back-btn">← Back to Dashboard</button>
+    </div>
+
+    <div id="legend" class="legend">
+        <div class="legend-title">Heatmap legend</div>
+        <div class="legend-bar"></div>
+        <div class="legend-labels"><span>Low</span><span>High</span></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Use Leaflet.heat (compatible with L.heatLayer used in map.js) -->
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+    <script src="heatmap.js"></script>
+</body>
+</html>
