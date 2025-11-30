@@ -12,6 +12,32 @@
     <div id="dashboard-header">REAL-TIME DASHBOARD</div>
     <div id="mapid"></div>
     
+    <!-- Data Info Panel -->
+    <div id="data-info">
+        <div class="info-header">
+            <h3>📍 Real Complaint Data</h3>
+            <button id="refresh-data" class="refresh-btn">🔄 Refresh</button>
+        </div>
+        <div class="info-content">
+            <div class="info-item">
+                <span class="info-label">Data Source:</span>
+                <span class="info-value" id="data-source">Loading...</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Last Updated:</span>
+                <span class="info-value" id="last-updated">Never</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Complaints Found:</span>
+                <span class="info-value" id="complaints-found">0</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Valid Locations:</span>
+                <span class="info-value" id="valid-locations">0</span>
+            </div>
+        </div>
+    </div>
+    
     <!-- Statistics Dashboard -->
     <div id="stats-dashboard">
         <div class="stat-card">
